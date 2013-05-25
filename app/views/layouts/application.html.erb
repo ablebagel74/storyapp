@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Storytellingapp</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<div class="navbar">
+	  <div class="navbar-inner">
+	    <a class="brand" href="/stories">Storytelling App</a>
+	    <ul class="nav">
+	      <li class=""><a href="/stories">Home</a></li>
+	      <li class=""><a href="/stories/new">Write your own</a></li>
+	    </ul>
+	  </div>
+	</div>
+
+
+	<div class="container">
+		<%= yield %>
+	</div>
+
+</body>
+</html>

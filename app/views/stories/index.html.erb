@@ -1,0 +1,22 @@
+<h1>The stories of our lives</h1>
+
+<%= link_to "Write new story", new_story_path, :class => "btn btn-large btn-primary" %>
+
+<hr/>
+<% for story in @stories %>
+	<div class="story">
+		<br/>
+		<h2><%= story.title %></h2>
+		<br/>
+		<br/>
+		<% for beat in story.beats %>
+			<%= image_tag beat.picture.url(:medium) %>
+		<% end %>
+		<br/>
+		<br/>
+		<p><%= story.body %></p>
+		<br/>
+
+	</div>
+<% end %>
+
