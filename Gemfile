@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.11'
 gem 'jquery-rails', '2.0.2'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'heroku'
 
 
 group :production do
